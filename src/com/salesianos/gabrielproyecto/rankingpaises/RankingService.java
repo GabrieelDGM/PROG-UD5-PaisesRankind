@@ -21,7 +21,7 @@ public class RankingService {
         }
     }
 
-    //
+
     public static void editarPais(Pais pais, String nuevoNombre, String nuevaCapital, String nuevoIdioma,
             String nuevaCultura, String nuevoPaisaje, String nuevaGastronomia, int nuevaPuntuacion) {
         if (lista.contains(pais)) {
