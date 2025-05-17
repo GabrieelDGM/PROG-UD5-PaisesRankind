@@ -4,20 +4,19 @@ public class Pais {
 
     private String nombre;
     private String capital;
-    private String idimoma;
+    private String idioma;
     private String cultura;
     private String paisaje;
-    private String gastronomina;
+    private String gastronomia;
     private int puntuacion;
 
-    public Pais(String nombre, String capital, String idimoma, String cultura, String paisaje, String gastronomina,
-            int puntuacion) {
+    public Pais(String nombre, String capital, String idioma, String cultura, String paisaje, String gastronomia, int puntuacion) {
         this.nombre = nombre;
         this.capital = capital;
-        this.idimoma = idimoma;
+        this.idioma = idioma;
         this.cultura = cultura;
         this.paisaje = paisaje;
-        this.gastronomina = gastronomina;
+        this.gastronomia = gastronomia;
         this.puntuacion = puntuacion;
     }
 
@@ -37,12 +36,12 @@ public class Pais {
         this.capital = capital;
     }
 
-    public String getIdimoma() {
-        return idimoma;
+    public String getIdioma() {
+        return idioma;
     }
 
-    public void setIdimoma(String idimoma) {
-        this.idimoma = idimoma;
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
     }
 
     public String getCultura() {
@@ -61,12 +60,12 @@ public class Pais {
         this.paisaje = paisaje;
     }
 
-    public String getGastronomina() {
-        return gastronomina;
+    public String getGastronomia() {
+        return gastronomia;
     }
 
-    public void setGastronomina(String gastronomina) {
-        this.gastronomina = gastronomina;
+    public void setGastronomia(String gastronomia) {
+        this.gastronomia = gastronomia;
     }
 
     public int getPuntuacion() {
@@ -79,7 +78,12 @@ public class Pais {
 
     @Override
     public String toString() {
-        return "Pais [nombre=" + nombre + ", capital=" + capital + ", idimoma=" + idimoma + ", cultura=" + cultura
-                + ", paisaje=" + paisaje + ", gastronomina=" + gastronomina + ", puntuacion=" + puntuacion + "]";
+        return "Pais nombre: " + nombre
+                + ", capital: " + capital
+                + ", idioma: " + idioma
+                + ", cultura: " + cultura
+                + ", paisaje: " + paisaje
+                + ", gastronomia: " + gastronomia
+                + ", puntuacion: " + puntuacion;
     }
 }

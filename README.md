@@ -1,18 +1,25 @@
-## Getting Started
+# PROG-UD5-Rankings
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 🎯 Objetivo
+Desarrollar una aplicación de escritorio en Java que permita gestionar un ranking de países, usando una interfaz gráfica basada en Swing.
 
-## Folder Structure
+## 🧠 Tecnologías utilizadas
+- Java 8+
+- Swing (`JOptionPane`)
+- Git y GitHub
+- IDE: Visual Studio Code
 
-The workspace contains two folders by default, where:
+## ⚙️ Funcionalidades
+- Añadir país
+- Editar país
+- Eliminar país
+- Mostrar lista de países
+- Mostrar ranking de países ordenado por puntuación
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 📚 Estructura del proyecto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📝 Documentación
+Consulta el [Manual de usuario](docs/manual.md) para aprender cómo utilizar la aplicación.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🧑‍💻 Autor
+Gabriel

@@ -50,19 +50,31 @@ public class Main {
         } while (!opcion.equalsIgnoreCase("F"));
     }
 
-    private static void añadirPais() {
-        String nombre = InputHelper.solicitarTexto("Nombre del país:");
-        String capital = InputHelper.solicitarTexto("Capital del país:");
-        String idioma = InputHelper.solicitarTexto("Idioma del país:");
-        String cultura = InputHelper.solicitarTexto("Cultura del país:");
-        String paisaje = InputHelper.solicitarTexto("Paisaje del país:");
-        String gastronomia = InputHelper.solicitarTexto("Gastronomía del país:");
-        int puntuacion = InputHelper.solicitarEntero("Puntuación del país (1-10):", 1, 10);
+  private static void añadirPais() {
+    String nombre = InputHelper.solicitarTexto("Nombre del país:");
+    if (nombre == null) return;
 
-        Pais pais = new Pais(nombre, capital, idioma, cultura, paisaje, gastronomia, puntuacion);
-        RankingService.añadirPais(pais);
-    }
+    String capital = InputHelper.solicitarTexto("Capital del país:");
+    if (capital == null) return;
 
+    String idioma = InputHelper.solicitarTexto("Idioma del país:");
+    if (idioma == null) return;
+
+    String cultura = InputHelper.solicitarTexto("Cultura del país:");
+    if (cultura == null) return;
+
+    String paisaje = InputHelper.solicitarTexto("Paisaje del país:");
+    if (paisaje == null) return;
+
+    String gastronomia = InputHelper.solicitarTexto("Gastronomía del país:");
+    if (gastronomia == null) return;
+
+    int puntuacion = InputHelper.solicitarEntero("Puntuación del país (1-10):", 1, 10);
+    if (puntuacion == -1) return; // 
+
+    Pais pais = new Pais(nombre, capital, idioma, cultura, paisaje, gastronomia, puntuacion);
+    RankingService.añadirPais(pais);
+}
     private static void editarPais() {
         if (RankingService.getPaises().isEmpty()) {
             JOptionPane.showMessageDialog(null, "No hay países para editar.");

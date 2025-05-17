@@ -21,9 +21,8 @@ public class RankingService {
         }
     }
 
-
     public static void editarPais(Pais pais, String nuevoNombre, String nuevaCapital, String nuevoIdioma,
-            String nuevaCultura, String nuevoPaisaje, String nuevaGastronomia, int nuevaPuntuacion) {
+                                  String nuevaCultura, String nuevoPaisaje, String nuevaGastronomia, int nuevaPuntuacion) {
         if (lista.contains(pais)) {
             pais.setNombre(nuevoNombre);
             pais.setCapital(nuevaCapital);
@@ -41,6 +40,10 @@ public class RankingService {
         ArrayList<Pais> copia = new ArrayList<>(lista);
         copia.sort(Comparator.comparing(Pais::getPuntuacion).reversed());
         return copia;
+    }
+
+    public static ArrayList<Pais> getPaises() {
+        return lista;
     }
 
     public static int tamaño() {
