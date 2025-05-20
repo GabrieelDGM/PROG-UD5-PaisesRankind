@@ -20,70 +20,35 @@ public class Pais {
         this.puntuacion = puntuacion;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    public String getCapital() { return capital; }
+    public void setCapital(String capital) { this.capital = capital; }
 
-    public String getCapital() {
-        return capital;
-    }
+    public String getIdioma() { return idioma; }
+    public void setIdioma(String idioma) { this.idioma = idioma; }
 
-    public void setCapital(String capital) {
-        this.capital = capital;
-    }
+    public String getCultura() { return cultura; }
+    public void setCultura(String cultura) { this.cultura = cultura; }
 
-    public String getIdioma() {
-        return idioma;
-    }
+    public String getPaisaje() { return paisaje; }
+    public void setPaisaje(String paisaje) { this.paisaje = paisaje; }
 
-    public void setIdioma(String idioma) {
-        this.idioma = idioma;
-    }
+    public String getGastronomia() { return gastronomia; }
+    public void setGastronomia(String gastronomia) { this.gastronomia = gastronomia; }
 
-    public String getCultura() {
-        return cultura;
-    }
-
-    public void setCultura(String cultura) {
-        this.cultura = cultura;
-    }
-
-    public String getPaisaje() {
-        return paisaje;
-    }
-
-    public void setPaisaje(String paisaje) {
-        this.paisaje = paisaje;
-    }
-
-    public String getGastronomia() {
-        return gastronomia;
-    }
-
-    public void setGastronomia(String gastronomia) {
-        this.gastronomia = gastronomia;
-    }
-
-    public int getPuntuacion() {
-        return puntuacion;
-    }
-
-    public void setPuntuacion(int puntuacion) {
-        this.puntuacion = puntuacion;
-    }
+    public int getPuntuacion() { return puntuacion; }
+    public void setPuntuacion(int puntuacion) { this.puntuacion = puntuacion; }
 
     @Override
     public String toString() {
-        return "Pais nombre: " + nombre
-                + ", capital: " + capital
-                + ", idioma: " + idioma
-                + ", cultura: " + cultura
-                + ", paisaje: " + paisaje
-                + ", gastronomia: " + gastronomia
-                + ", puntuacion: " + puntuacion;
+        return "Pais nombre: " + nombre +
+               ", capital: " + capital +
+               ", idioma: " + idioma +
+               ", cultura: " + cultura +
+               ", paisaje: " + paisaje +
+               ", gastronomia: " + gastronomia +
+               ", puntuacion: " + puntuacion;
     }
 }
